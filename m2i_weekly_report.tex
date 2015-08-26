@@ -19,44 +19,70 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{framed}
+\usepackage{hyperref}  
 \usepackage[left=1.5cm,right=1.5cm,top=1cm,bottom=1cm]{geometry}
 
 
 %****************************************************
 % Make sure you modify this for your team.     *
 \newcommand{\teamName}{INSERT TEAM NAME HERE}
+\newcommand{\subteamName}{INSERT SUB-TEAM NAME HERE}
 \newcommand{\teamLeader}{INERT PERSON SUBMITTING THE REPORT HERE}   
 %****************************************************
 
 \author{Submitted by \teamLeader}
-\title{M:2:I Weekly Report \ \\ \teamName}
+\title{M:2:I Weekly Report \ \\ \teamName \ \\ Sub-Team: \subteamName}
 \date{Submitted on \today}
 \begin{document}
 \maketitle
+
+\begin{Form}
 \begin{framed}
 \section*{Meeting Date, Time and Location}
-January 15th, 7:00 p.m. @ 0620 Howe Hall
+\TextField[name=meetinginfo,width=9cm,charsize=12pt]
+{\mbox{}}
 \end{framed}
 \begin{framed}
 \section*{Attendance}
-\textbf{In Attendance:} name1,name2, name3 \ \\
-\textbf{Excused Absence:} name1, name2, name3 \ \\
-\textbf{Absent:} name1,name2,name3
+\TextField[name=attend,width=14cm,charsize=12pt]{\textbf{In Attendance:}} \ \\ \ \\
+\TextField[name=attend2,width=16.85cm,charsize=12pt]\ \\ \ \\
+\TextField[name=excused,width=13.5cm,charsize=12pt]{\textbf{Excused Absence:}} \ \\ \ \\
+\TextField[name=absent,width=15.3cm,charsize=12pt]{\textbf{Absent:}}
 \subsection*{Notes on attendance}
 Insert any notes on specific members attendance
 \end{framed}
 \begin{framed}
-\section*{Team Goals}
-List all team goals and the progress made
+\section*{Team Milestone Progress}
+List all team milestones and the progress made
 \begin{itemize}
-\item Goal 1 - 20\%
-\item Goal 2 - 40\%
-\item Goal 3 - 15\%
+\item Milestone 1 - 20\%
+\item Milestone 2 - 40\%
+\item Milestone 3 - 15\%
 \end{itemize}
-\subsection*{Team Goal Notes}
-Describe any additional information on the progress with these goals.
+\subsection*{Team Milestone Notes}
+Any other notes about your milestones go here.
 \end{framed}
-\section*{Meeting Minutes}
-Copy and past your meeting minutes here or any other notes you have.
+\begin{framed}
+\section*{Action Items Report}
+List what was accomplished this week on your Action Items
+\subsection*{EXAMPLE}
+\begin{itemize}
+\item 3D model of Widget A (Dave) - 100\% 
+\item Power Circuit working (Mary) - 75\%
+\end{itemize}
 
+\subsection*{Action Items Notes}
+Power Circuit tested but the results were unexpected.
+\section*{Action Items for Next Week}
+List what was accomplished this week on your Action Items
+\subsection*{EXAMPLE}
+\begin{itemize}
+\item 3D print Widget A (Dave)
+\item Talk to Matthew N. about power circuit (Mary)
+\end{itemize}
+\subsection*{Action Items Notes}
+Any other notes
+
+\end{framed}
+\end{Form}
 \end{document}
